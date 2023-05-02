@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>EX 7</h1>
+
+    <section>
+      <h2>Ex 7.1</h2>
+      <label>
+        <span>Search cars</span>
+        <input id="searchCars" />
+      </label>
+      <ul id="carsList"></ul>
+    </section>
+
+    <section>
+      <h2>Ex 7.2</h2>
+      <form id="trainMathForm" method="get">
+        <button style="display: block" type="button" name="generateButton">
+          Generate
+        </button>
+        <label>
+          <span>first num</span>
+          <input readonly name="firstNum" />
+        </label>
+        <p>Operation: +</p>
+        <label>
+          <span>second num</span>
+          <input readonly name="secondNum" />
+        </label>
+
+        <br />
+
+        <span>Your answer: </span><input name="userResult" />
+        <br />
+        <button type="submit">Check</button>
+        <h3 id="resultMessage" style="display: none"></h3>
+      </form>
+    </section>
+
+    <section>
+        <h2>EX 7.3</h2>
+        <form id="register" method="post">
+            <label>
+                <span>Login</span>
+                <input name="login"/>
+            </label>
+            <label>
+                <span>Password</span>
+                <input name="password"/>
+            </label>
+            <label>
+                <span>License</span>
+                <input id="license" name="license" type="checkbox">
+            </label>
+            <button id="submitRegister" type="submit" disabled>Submit</button>
+            <div id="loginsBlock">
+                Logins: 
+            </div>
+            <div id="errorsBlock">
+
+            </div>
+        </form>
+    </section>
+    <script src="./index.js"></script>
+  </body>
+</html>
